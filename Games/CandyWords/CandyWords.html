@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">-->
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- local files -->
+	<script src="Content/Js/jquery.js"></script>
+
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+		<title>Candy Words Game</title>
+	
+		<script>
+	    var headElement = document.getElementsByTagName("head")[0];
+	    // var gameScripts = document.createElement("script");
+	    // gameScripts.type = "text/javascript";
+	    // gameScripts.src = "Content/js/SwitchAndWin.js";
+	    var onScripts = document.getElementsByTagName("script")[0];
+	    var offScripts = document.getElementsByTagName("script")[1];
+
+	    function doesConnectionExist() {
+	      var xhr = new XMLHttpRequest();
+	      var file = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+	      var randomNum = Math.round(Math.random() * 10000);
+
+	      xhr.open("HEAD", file + "?rand=" + randomNum, true);
+	      xhr.send();
+
+	      function processRequest(e) {
+	        if (xhr.readyState == 4)
+	        {
+	          if (xhr.status >= 200 && xhr.status < 304)
+	          {
+	            console.log("connection exists!");
+	            /*var scriptTag = document.createElement("script");
+	            scriptTag.type = "text/javascript";
+	            scriptTag.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+	            headElement.insertBefore(scriptTag, headElement.childNodes[0]);*/
+	            headElement.removeChild(offScripts);
+	          }
+	          else
+	          {
+	            console.log("connection doesn't exist!");
+	            /*var scriptTag = document.createElement("script");
+	            scriptTag.type = "text/javascript";
+	            scriptTag.src = "Content/js/jquery.js";
+	            headElement.insertBefore(scriptTag, headElement.childNodes[0]);*/
+	            headElement.removeChild(onScripts);
+	          }
+	        }
+	      }
+	      xhr.addEventListener("readystatechange", processRequest, false);
+	    }
+	    doesConnectionExist();
+	    //headElement.appendChild(gameScripts);
+	</script>
+	
+	<script src="Content/Js/candy.js"></script>
+	<link rel="stylesheet" href="Content/Css/style.css">
+
+</head>
+<body>
+<div class="gamesWrapper">
+	<audio loop src="" class="general-game-sound"></audio> <!-- added - marina 28-3-18 -->
+	<audio src="" class="key-pressed"></audio> <!-- added - marina 28-3-18 -->
+	<audio src="" class="key-release"></audio> <!-- added - marina 28-3-18 -->
+	<audio src="" class="shuffle"></audio> <!-- added - marina 28-3-18 -->
+	<audio src="" class="candies-inc"></audio> <!-- added - marina 28-3-18 -->
+	<audio src="" class="correct"></audio> <!-- added - marina 28-3-18 -->
+	<audio src="" class="wrong"></audio> <!-- added - marina 28-3-18 -->
+	<audio src="" class="key-over"></audio>
+<div class="mainPanel">
+	<div class="main_btns">
+		<div class="play_btn">
+			<span>play</span>
+		</div>
+		<div class="instr_btn">
+			<span>instructions</span>
+		</div>
+		<div class="exit_btn">
+		</div>
+	</div>
+</div>
+
+<div class="questionsPanel" id="questionsPanel">
+	<!-- <div style="position:absolute;right:0px;top:155px;"><img src="Content/images/Demo.png"/></div> -->
+	<div class="questionBG"></div>
+	<div class="wordSound">
+		<!-- <audio src=""></audio> --> <!-- initial code commented - marina 28-3-18 -->
+	</div>
+	<div class="wordCircles"></div>
+	<div class="randomOrderLetters"></div>
+	<div class="revealHint"></div>
+	<div class="ctr_btns">
+		<div class="shuffle_btn"><span>Shuffle</span></div>
+		<div class="skip_btn"><span>Skip</span></div>
+		<div class="reveal_btn"><span>Reveal</span></div>
+		<div class="hint_btn"><span>Hint</span></div>
+	</div>
+	<div class="score">
+		<!-- <audio src=""></audio> --> <!-- initial code commented - marina 28-3-18 -->
+		<div class="qCurrent" data-question="1"></div>
+		<div class="questions">
+			<div class="q1"></div>
+			<div class="q2"></div>
+			<div class="q3"></div>
+			<div class="q4"></div>
+			<div class="q5"></div>
+			<div class="q6"></div>
+			<div class="q7"></div>
+		</div>
+		<div class="time">
+			<div class="bar">
+				<div class="barBlue"></div>
+			</div>
+			<div class="countdown" id="countdown">45</div>
+		</div>
+		<div class="player">
+			<span>SCORE:</span>
+			<span class="points" id="points">0</span>
+		</div>
+	</div>
+	<div class="back_btn_Instr">
+	</div>
+</div>
+<div class="instructionsPanel">
+	<div class="instrBG"></div>
+	<div class="instructionsContent">
+		<div class="instrTitle"><span>instructions</span></div>
+		<div class="instrRules">
+			<ul>
+				<li>Welcome to Candyland!</li>
+				<li>Put the candies in the correct order to make a word.</li>
+				<li>Watch out! Find the word before the time's up.</li>
+				<li>Click on Shuffle to mix the letters up.</li>
+				<li>Click on Hint for some extra help.</li>
+				<li>Click on Skip to skip the word.</li>
+				<li>Click on Reveal to see a letter.</li>
+				<li>Be careful! You can only use these once!</li>
+			</ul>
+			<span>Enjoy!</span>
+		</div>
+	</div>
+	<div class="true_back_btn_Instr">
+	</div>
+</div>
+<div class="blockPanel"></div>
+<div class="afterPanel_answer">
+		<div class="answerWindow_answer">
+			<div class="answerBox_answer">
+				<div class="feedback"></div>
+				<div class="img_solved"></div>
+				<div class="solved"></div>
+				<div class="speaker_answer">
+					<svg  width="31.051px" height="30px" viewBox="0 0 21.051 20" >
+						<path fill="#000000" d="M6.003,4.85c1.474-1.203,2.957-2.394,4.424-3.608c2.143-1.775,3.269-1.841,3.371,1.087
+						c0.088,2.625,0.451,14.621-0.48,16.607c-1.016,2.174-1.938,0.395-3.272-0.695c-1.318-1.082-2.799-2.285-4.043-3.301
+						c-2.031,0-4.526,0.873-5.44-1.186C-0.124,12.217,0.022,10.467,0,8.822c-0.018-1.451,0.568-2.792,1.006-3.313
+						C1.878,4.471,3.61,4.85,6.003,4.85z M19.389,17.162c2.164-2.691,2.145-11.089-0.032-13.616c-0.573-0.666-1.689-0.819-2.491-0.344
+						c-0.803,0.474-0.988,1.399-0.415,2.064c1.199,1.394,1.394,8.48-0.034,10.256c-0.545,0.68-0.324,1.6,0.496,2.053
+						c0.306,0.166,0.65,0.246,0.99,0.246C18.479,17.82,19.045,17.59,19.389,17.162z"/>
+					</svg>
+				</div>
+			<div class="questionSound">
+
+				<!-- <audio src=""></audio> --> <!-- initial code commented - marina 28-3-18 -->
+			</div>
+			<div class="continue_answer">continue</div>
+			</div>
+		</div>
+</div>
+<div class="afterPanel_winner">
+	<div class="result1"></div>
+	<div class="result2"></div>
+	<div class="playerF">
+		<span>SCORE:</span>
+		<span class="points" id="points">0</span>
+	</div>
+	<div class="back_btn_Instr"></div>
+</div>
+
+</div>
+</body>
+</html>

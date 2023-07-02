@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>AllWords=[];</script>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/r.js"></script>
+	<script src="../js/Companion/vocabulary.js"></script>
+	<script src="../js/glossary.js"></script>
+	<script src="../js/tools.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link href="../css/glossary.css" rel="stylesheet">
+
+	<meta charset="UTF-8">
+	<style>
+		@font-face {
+		font-family: 'Stag Sans Web';
+		src:url('../css/fonts/StagSansBookWeb.woff') format('woff'),
+		url('fonts/StagSansBookWeb.ttf') format('truetype');
+		font-weight:  400;
+		font-style:   normal;
+		font-stretch: normal;}
+
+		@font-face {
+		font-family: 'Stag Sans Web';
+		src:url('../css/fonts/StagSansSemiboldWeb.woff') format('woff'),
+		 url('fonts/tagSansSemiboldWeb.ttf') format('truetype');
+		font-weight:  600;
+		font-style:   normal;
+		font-stretch: normal;}
+
+		@font-face {
+		font-family: 'Stag Sans Web';
+		src:url('../css/fonts/StagSansLightWeb.woff') format('woff'),
+		url('fonts/StagSansLightWeb.ttf') format('truetype');
+		font-weight:  300;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'mmAsap';
+		src:url('../css/fonts/mmAsap-Regular.otf') format('opentype');
+		font-weight:  700;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'mmAsap-Bold';
+		src:url('../css/fonts/mmAsap-Bold.otf') format('opentype');
+		font-weight:  700;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'CFAsty Book';
+		src:url('../css/fonts/CFAstyStd-Book_0.otf') format('opentype');
+		font-weight:  400;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'CFAsty';
+		src:url('../css/fonts/CFAstyStd-Medium_0.otf') format('opentype');
+		font-weight:  300;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'CFAstyPro';
+		src:url('../css/fonts/CFAstyPro-Medium.otf') format('opentype');
+		font-weight:  300;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'CFAsty Primary Medium';
+		src:url('../css/fonts/CFAstyPrimary-Medium.otf') format('opentype');
+		font-weight:  normal;
+		font-style:   normal;
+		font-stretch: normal;}
+
+		@font-face {
+		font-family: 'CFAsty Primary Book';
+		src:url('../css/fonts/CFAstyPrimary-Book.otf') format('opentype');
+		font-weight:  normal;
+		font-style:   normal;
+		font-stretch: normal;}
+		
+		@font-face {
+		font-family: 'CFAsty Primary Bold';
+		src:url('../css/fonts/CFAstyPrimary-Bold.otf') format('opentype');
+		font-weight:  bold;
+		font-style:   normal;
+		font-stretch: normal;}
+	</style>
+
+
+</head>
+<body>
+<div class="IWB glossary">
+<div class="loadingGif">
+		<div class="loader" id="loader-1">
+			<div class="loadingText">Loading</div>
+		</div>
+
+	
+	</div>
+<div class="mainWrapper" >
+	<div class="main mainBg mainFrame">
+		<div class="mainImg" style="display: block;"><img src="../Images/Main/logo-voc-list.png"></div>
+		<div class="moduleInfos">			
+			<div><span class="mType">Vocabulary List</span></div>					
+		</div>
+
+		<div class="glossaryWrapper">			
+			<div class="glossaryMain">
+				<div class="glossaryLeft">
+					<div class="glossaryWordScrollWrapper"><div class="glossaryWordWrapper"></div></div>
+					<div class="glossarySearch">
+						<input type="text" placeholder="Search"/>	
+					</div>
+					<div class="wlScroll" >
+						<div class="wlScrollHandle"></div>
+					</div>
+				</div>
+				<div class="vlheader">Vocabulary List</div>
+				<div class="glossaryExtra">
+					
+					<div class="glexName">
+						<div class="glossaryName">
+							<div class="glSvg">
+													
+								<svg width="50px" height="50px" viewBox="0 -12.5 50 50" class="wordsoundPlay">
+									<circle fill="rgba(0,0,0,0)" cx="25" cy="12.5" r="24.5"/>
+										<g fill="#231F20">
+										<path  d="M27.896,18.119c-0.271,0-0.542-0.117-0.731-0.342c-0.334-0.404-0.281-1.004,0.123-1.34
+										c1.352-1.131,2.125-2.76,2.125-4.479c0-1.577-0.618-3.059-1.744-4.17c-0.373-0.37-0.377-0.973-0.007-1.346
+										s0.972-0.378,1.346-0.007c1.489,1.472,2.308,3.433,2.308,5.522c0,2.284-1.022,4.448-2.809,5.938
+										C28.327,18.047,28.11,18.119,27.896,18.119z"/>
+
+										<path  d="M31.642,21.861c-0.261,0-0.52-0.105-0.707-0.313c-0.349-0.389-0.319-0.99,0.07-1.344
+										c2.337-2.111,3.676-5.119,3.676-8.247c0-2.986-1.169-5.79-3.29-7.892c-0.371-0.374-0.376-0.975-0.007-1.348
+										c0.374-0.368,0.973-0.378,1.35-0.006c2.482,2.463,3.85,5.748,3.85,9.245c0,3.665-1.568,7.184-4.305,9.659
+										C32.097,21.781,31.87,21.861,31.642,21.861z"/>
+
+										<path  d="M36.02,26.242c-0.254,0-0.507-0.1-0.694-0.301c-0.359-0.385-0.337-0.986,0.045-1.346
+										c3.55-3.32,5.506-7.809,5.506-12.637c0-4.64-1.813-9-5.105-12.276c-0.373-0.372-0.373-0.975-0.004-1.346
+										c0.372-0.375,0.973-0.372,1.347-0.004c3.653,3.638,5.666,8.478,5.666,13.626c0,5.362-2.17,10.34-6.108,14.028
+										C36.486,26.158,36.251,26.242,36.02,26.242z"/>
+
+										<path  d="M22.996,2.201c0-1.046-0.605-1.296-1.345-0.557l-4.65,4.651c-0.74,0.738-2.203,1.344-3.248,1.344H9.681
+										c-1.047,0-1.901,0.856-1.901,1.904v5.705c0,1.047,0.854,1.902,1.901,1.902h3.85c1.048,0,2.508,0.605,3.248,1.346l4.873,4.873
+										c0.739,0.738,1.345,0.488,1.345-0.559V2.201z"/>
+									</g>
+								</svg>
+							</div>
+							<div class="glName"><span></span></div>
+							
+						</div>
+						<div class="glossaryDefinition">
+							
+						</div>
+					</div>
+				
+					
+					<div class="vocListWrapper">
+					
+					
+					</div>
+					
+					
+					
+				</div>
+				<div class="vlMain">
+					<div class="glossaryWords">
+						<div class="glossaryAlpha">
+							<div>	
+								<div class="glossaryBorder">							
+								</div>
+								<div class="glossaryAlphaHeader">A &rarr; Z</div>
+								<div class="glossaryAlphaNumbers"><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span></div>
+							</div>
+							<div>
+								<div class="glossaryBorder">							
+								</div>
+								<div class="glossaryAlphaHeader"></div>
+								<div class="glossaryAlphaNumbers"><span>N</span><span>O</span><span>P</span><span>Q</span><span>R</span><span>S</span><span>T</span><span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span></div>
+							</div>
+						</div>
+						<div class="glossaryModules">	
+							<div class="glossaryTitle">Module</div>
+							<div class="glossaryModsWrapper">								
+							</div>
+							<div class="glossaryBorder">							
+							</div>
+						</div>
+						<div class="glossaryLessons">
+							<div class="glossaryTitle">Lesson</div>
+							<div class="glossaryModsWrapper">								
+							</div>
+							<div class="glossaryBorder">							
+							</div>
+						</div>
+					
+										
+					</div>	
+					<div class="vlSelect"><span class="wordSelected abModule">Words alphabetically</span><span class="wbyModule">Words by module</span>
+					</div>
+				</div>
+			
+			
+			
+
+			
+			
+			
+					
+
+		<audio class="wordSound">				
+		  <source src="../Audio/Intro.mp3" type="audio/mpeg">	
+		Your browser does not support the audio element.
+		  
+		</audio>
+		<audio class="exampleSound">				  
+		  <source src="../Audio/Intro.mp3" type="audio/mpeg">		
+		Your browser does not support the audio element.
+		  
+		</audio>
+		</div>
+		
+		
+		<svg width="22px" height="22px" viewBox="0 0 22 22" class="vocExit">
+			<polygon fill="black" points="10.999,14.088 3.09,21.999 0.003,18.911 7.912,11.001 0,3.086 3.087,0 11.001,7.914 18.913,0 
+				22,3.086 14.086,11.001 21.998,18.911 18.911,22 "/>
+		</svg>
+		
+	</div>
+	
+
+	
+	
+</div>
+	</div>
+	
+				
+			
+		
+
+		
+
+	
+			
+		
+			
+	
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		@font-face {
+				font-family: 'Gill Sans Ultra Bold';
+				src: url('Fonts/GILSANUB_A.woff') format("woff");
+				font-weight:  400;
+				font-style:   normal;
+				font-stretch: normal;
+		}
+
+	@font-face {
+				font-family: 'BD Cartoon Shout';
+				src: url('Fonts/BD_Cartoon_Shout_8.woff') format("woff");
+				font-weight:  400;
+				font-style:   normal;
+				font-stretch: normal;
+		}
+
+		@font-face {
+				font-family: 'mmAsap';
+				src: url('Fonts/mmAsap-Regular_1.otf') format("opentype");
+				font-weight:  400;
+				font-style:   normal;
+				font-stretch: normal;
+		}
+
+		@font-face {
+				font-family: 'mmAsap';
+				src: url('Fonts/mmAsap-Bold_1.otf') format("opentype");
+				font-stretch: normal;
+				font-weight:700;
+				font-style:   normal;
+		}
+
+		@font-face {
+				font-family: 'Heavyweight';
+				src: url('Fonts/HEAVYWEI_0.TTF') format("truetype");
+				font-stretch: normal;
+				font-weight:700;
+				font-style:	normal;
+		}
+
+		@font-face {
+				font-family: 'MisterEarl';
+				src: url('Fonts/mrearln_6.TTF') format("truetype");
+				font-stretch: normal;
+				font-weight:700;
+				font-style:	normal;
+		}
+
+
+	</style>
+	<meta charset="utf-8" />
+	<script src="Content/Js/jquery.js"></script>
+	<script src="Content/Js/pearl.js"></script>
+	<link rel="stylesheet" href="Content/Css/style.css">
+
+</head>
+<body>
+<div class="gamesWrapper">
+	<audio loop src="" class="general-game-sound"></audio> <!-- added game sound - marina 22-3-18 -->
+	<audio src="" class="key-over"></audio>									
+<div class="mainPanel">
+	<div class="main_btns">
+		<div class="play_btn">
+			<div class="play_btn_txt"></div>
+		</div>
+		<div class="instr_btn">
+			<div class="instr_btn_txt"></div>
+		</div>
+		<div class="exit_btn">
+			<div class="exit_btn_txt"></div>
+		</div>
+	</div>
+</div>
+
+<div class="questionsPanel" id="questionsPanel">
+	<div class="questionBG"></div>
+	<div class="fisherman">
+		<div class="splashes"></div>
+		<div class="hook"></div>
+	</div>
+	<div class="bite"></div>
+	<div class="sea">
+		<audio src="" class="jelly-electricity-sound"></audio> <!-- added jellyfish sound - marina 23-3-18 -->
+		<div class="fish1" id="fish1" data-fish="1"></div>
+		<div class="fish2" id="fish2" data-fish="2"></div>
+		<div class="fish3" id="fish3" data-fish="3"></div>
+		<div class="fish4" id="fish4" data-fish="4"></div>
+		<div class="fish5" id="fish5" data-fish="5"></div>
+		<div class="fish6" id="fish6" data-fish="6"></div>
+		<div class="fish7" id="fish7" data-fish="7"></div>
+		<div class="fish8" id="fish8" data-fish="8"></div>
+		<div class="fish9" id="fish9" data-fish="9"></div>
+		<div class="fish10" id="fish10" data-fish="10"></div>
+	</div>
+	<div class="pearl">
+		<img id="specialPearlBonus" src="">
+	</div>
+	<div class="questionContent">
+		<div class="questionImage"></div>
+		<div class="question"></div>
+		<div class="questionAnswers">
+			<div class="answerA"><div class="A_btn"><span>a.</span></div></div>
+			<div class="answerB"><div class="B_btn"><span>b.</span></div></div>
+		</div>
+		<div class="speaker">
+				<svg  width="31.051px" height="30px" viewBox="0 0 21.051 20" >
+					<path fill="#000000" d="M6.003,4.85c1.474-1.203,2.957-2.394,4.424-3.608c2.143-1.775,3.269-1.841,3.371,1.087
+					c0.088,2.625,0.451,14.621-0.48,16.607c-1.016,2.174-1.938,0.395-3.272-0.695c-1.318-1.082-2.799-2.285-4.043-3.301
+					c-2.031,0-4.526,0.873-5.44-1.186C-0.124,12.217,0.022,10.467,0,8.822c-0.018-1.451,0.568-2.792,1.006-3.313
+					C1.878,4.471,3.61,4.85,6.003,4.85z M19.389,17.162c2.164-2.691,2.145-11.089-0.032-13.616c-0.573-0.666-1.689-0.819-2.491-0.344
+					c-0.803,0.474-0.988,1.399-0.415,2.064c1.199,1.394,1.394,8.48-0.034,10.256c-0.545,0.68-0.324,1.6,0.496,2.053
+					c0.306,0.166,0.65,0.246,0.99,0.246C18.479,17.82,19.045,17.59,19.389,17.162z"/>
+				</svg>
+		</div>
+		<div class="questionSound">
+
+			<audio src=""></audio>
+		</div>
+	</div>
+	<div class="score">
+		<audio src=""></audio>
+		<div class="time">
+			<div class="bar">
+				<div class="barBlue"></div>
+			</div>
+		</div>
+		<div class="player">
+			<span>Score:</span>
+			<span class="points" id="points">0</span>
+		</div>
+	</div>
+	<div class="back_btn">
+		<div class="back_btn_txt"></div>
+	</div>
+	<div class="afterPanel_answer">
+		<div class="answerWindow_answer">
+			<div class="answerBox_answer">
+				<div class="feedback"></div>
+				<img src=""></img>
+				<div class="solved"></div>
+				<div class="speaker_answer">
+					<svg  width="31.051px" height="30px" viewBox="0 0 21.051 20" >
+						<path fill="#000000" d="M6.003,4.85c1.474-1.203,2.957-2.394,4.424-3.608c2.143-1.775,3.269-1.841,3.371,1.087
+						c0.088,2.625,0.451,14.621-0.48,16.607c-1.016,2.174-1.938,0.395-3.272-0.695c-1.318-1.082-2.799-2.285-4.043-3.301
+						c-2.031,0-4.526,0.873-5.44-1.186C-0.124,12.217,0.022,10.467,0,8.822c-0.018-1.451,0.568-2.792,1.006-3.313
+						C1.878,4.471,3.61,4.85,6.003,4.85z M19.389,17.162c2.164-2.691,2.145-11.089-0.032-13.616c-0.573-0.666-1.689-0.819-2.491-0.344
+						c-0.803,0.474-0.988,1.399-0.415,2.064c1.199,1.394,1.394,8.48-0.034,10.256c-0.545,0.68-0.324,1.6,0.496,2.053
+						c0.306,0.166,0.65,0.246,0.99,0.246C18.479,17.82,19.045,17.59,19.389,17.162z"/>
+					</svg>
+				</div>
+			<div class="questionSound">
+
+				<audio src=""></audio>
+			</div>
+			<div class="continue_answer">continue</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="instructionsPanel">
+	<div class="instrBG"></div>
+	<div class="instructionsContent">
+		<div class="instrTitle"><span>Instructions</span></div>
+		<div class="instrRules">
+			<span>Discover the underwater world!</span>
+			<ul>
+				<li>You have three minutes to catch as many fish as you can.</li>
+				<li>Use the mouse to control the boat and click to start fishing.</li>
+				<li>Catch a fish and answer a question. Answer correctly and get 100 points.</li>
+				<li>Be careful! Avoid the dangerous jellyfish.</li>
+				<li>Some of the fish have either a white or a golden pearl.</li>
+				<li>The white pearl gives you 100 extra points.</li>
+				<li>The golden pearl gives you 200 extra points and makes the jellyfish disappear for a few seconds.</li>
+			</ul>
+			<span>Happy fishing!</span>
+		</div>
+	</div>
+	<div class="back_btn_Instr">
+		<div class="back_btn_Instr_txt"></div>
+	</div>
+</div>
+<div class="blockPanel"></div>
+
+
+<div class="afterContainer">
+	<div class="afterPanel_winner">
+		<div class="answerWindow_winner">
+			<div class="answerBox_winner">
+				<span>YOUR SCORE IS</span>
+				<div class="fScore"></div>
+				<div class="plagain_btn">
+					<div class="plagain_btn_txt"></div>
+				</div>
+			</div>
+		</div>
+		<div class="exit_btn after-game-ends">
+			<div class="exit_btn_txt"></div>
+		</div> <!-- added "second" exit button- marina 22-3-18 -->
+	</div>
+</div>
+
+</div>
+</body>
+</html>

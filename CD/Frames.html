@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		@font-face {
+			font-family: 'Stag Sans Web';
+			src:url('../css/fonts/StagSansBookWeb.woff') format('woff'),
+			url('../css/fonts/StagSansBookWeb.ttf') format('truetype');
+			font-weight:  400;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+
+		@font-face {
+			font-family: 'Stag Sans Web';
+			src:url('../css/fonts/StagSansSemiboldWeb.woff') format('woff'),
+			url('../css/fonts/tagSansSemiboldWeb.ttf') format('truetype');
+			font-weight:  600;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+
+		@font-face {
+			font-family: 'Stag Sans Web';
+			src:url('../css/fonts/StagSansLightWeb.woff') format('woff'),
+			url('../css/fonts/StagSansLightWeb.ttf') format('truetype');
+			font-weight:  300;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+		
+		@font-face {
+			font-family: 'mmAsap Bold';
+			src:url('../css/fonts/mmAsap-Bold.otf') format('opentype');
+			font-weight:  700;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+		
+		@font-face {
+			font-family: 'mmAsap';
+			src:url('../css/fonts/mmAsap-Regular.otf') format('opentype');
+			font-weight:  400;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+		
+		@font-face {
+			font-family: 'CFAsty Book';
+			src:url('../css/fonts/CFAstyStd-Book_0.otf') format('opentype');
+			font-weight:  400;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+		
+		@font-face {
+			font-family: 'CFAsty';
+			src:url('../css/fonts/CFAstyStd-Medium_0.otf') format('opentype');
+			font-weight:  300;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+		
+		@font-face {
+			font-family: 'CFAstyPro';
+			src:url('../css/fonts/CFAstyPro-Medium.otf') format('opentype');
+			font-weight:  300;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+		
+		@font-face {
+			font-family: 'CFAsty Primary Medium';
+			src:url('../css/fonts/CFAstyPrimary-Medium.otf') format('opentype');
+			font-weight:  normal;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+
+		@font-face {
+			font-family: 'CFAsty Primary Book';
+			src:url('../css/fonts/CFAstyPrimary-Book.otf') format('opentype');
+			font-weight:  normal;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+		
+		@font-face {
+			font-family: 'CFAsty Primary Bold';
+			src:url('../css/fonts/CFAstyPrimary-Bold.otf') format('opentype');
+			font-weight:  bold;
+			font-style:   normal;
+			font-stretch: normal;
+		}
+		
+		@font-face {
+			font-family: 'Comic Sans';
+			src: url('../css/fonts/comic_0.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'Comic Sans Bold';
+			src: url('../css/fonts/comicbd_0.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'VAG Rounded Std Light';
+			src: url('../css/fonts/vagroundedstd-light.otf') format('opentype');
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
+	<meta charset="utf-8">	
+	<script src="../js/jquery.js"></script>	
+	<script src="../js/CD/Frames.js"></script>	
+	<script src="../js/tools.js"></script>
+
+	<script src="../js/framefunctions.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body>
+<div class="IWB primary">
+
+<div class="loadingGif">
+		<div class="loader" id="loader-1">
+			<div class="loadingText">Loading</div>
+		</div>
+
+	
+	</div>
+	
+	
+
+<div class="mainWrapper">
+
+<div class="mainImg"><img src="../Images/Main/logo.png"/></div>
+		<div class="mainSvgs">
+		
+			
+			
+			<!-- <svg width="304px" height="72px" viewBox="0 0 304 72" class="tSvg">
+				<path fill="transparent" d="M266.097,59.621l34.369-46.853c4.88-6.652,15.622-12.095,23.872-12.095H61.464     c-8.25,0-18.992,5.442-23.872,12.095L3.223,59.621c-4.88,6.652-2.122,12.095,6.128,12.095h282.874     C283.975,71.716,281.217,66.273,286.097,59.621z" ></path>
+				<text x="265" y="36" fill="white" text-anchor="end" class="mType">Student's Book</text>
+			</svg> -->
+			
+				<span class="mType">Student's Book</span>
+				<span class="mModule"></span>
+			
+			
+			
+			
+			</div>
+		<div class="moduleInfos">
+			<div class="mBook"><img src="../Images/Main/logo.png"/></div>
+			<div><span class="mType"></span>
+			
+			
+			
+						
+			
+			
+			
+			</div>
+			<div><span class="mModule"></span>
+			
+			
+			
+			
+			
+			
+			</div>
+			<div><span class="lessons"></span>
+			
+			
+			</div>		
+		</div>	
+	
+
+	<div class="main mainBg">
+		
+			
+		
+		
+		
+		
+		<div class="container">
+			
+		</div>
+		
+		<div class="scroll">
+			<div class="scrollHandle"></div>
+		</div>
+		
+		<div class="justScroll">
+				<div class="justScrollHandle"></div>
+		</div>
+		<div class="justHide"></div>
+		<div class="justificationWrapper">
+			
+				<div class="justMask"></div>
+				<div class="keyMask"></div>
+				<div class="justSound"></div>
+			
+		<audio><source src="" type="audio/mpeg"></audio>
+			
+		</div>
+		
+		
+		<div class="salonShadow"></div>
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	
+	
+	
+	
+</div>
+<div class="interactivePanel">
+			<!-- <svg width="45px" height="45px" viewBox="0 0 45 45" class="interactiveCheck" viewbox="0 0 45 45">
+				<path fill="#FFFFFF" d="M22.49,45c-9.984,0-18.875-6.703-21.616-16.32c-3.422-11.908,3.515-24.395,15.44-27.82
+					C18.339,0.283,20.418,0,22.5,0c9.985,0,18.875,6.701,21.617,16.297c1.662,5.775,0.965,11.852-1.947,17.119
+					c-2.91,5.248-7.701,9.045-13.472,10.707C26.67,44.701,24.591,45,22.493,45H22.49z"/>
+					<path d="M40.531,9.1c-0.172,0.084-0.336,0.191-0.479,0.333l-20.48,20.383l-7.96-7.961c-0.704-0.703-1.845-0.703-2.548,0
+					c-0.704,0.705-0.704,1.846,0,2.549l9.231,9.232c0.352,0.352,0.804,0.527,1.274,0.527c0.452,0,0.903-0.174,1.255-0.525
+					l21.616-21.497C41.884,11.072,41.245,10.056,40.531,9.1z"/>
+			</svg> -->
+			<div class="interactiveCheck">
+				<div style="position: relative;top: 50%;transform: translateY(-50%);"><span>check</span></div>
+			</div>
+			<svg width="45px" height="45px" class="interactiveShow" viewbox="0 0 45 45">
+			
+				<path fill="#FFFFFF" d="M44.863,22.439c0,12.383-10.04,22.426-22.44,22.426C10.04,44.865,0,34.822,0,22.439
+				C0,10.041,10.04,0,22.423,0C34.823,0,44.863,10.041,44.863,22.439z"/>
+
+				<path fill="#00A5AF" d="M24.848,17.691c-2.732-1.334-6.031-0.201-7.367,2.533s-0.201,6.033,2.531,7.367c2.734,1.336,6.035,0.205,7.371-2.529
+					S27.584,19.027,24.848,17.691z M25.732,22.493c-0.421,0.864-1.462,1.22-2.323,0.799c-0.863-0.421-1.222-1.463-0.799-2.324
+					c0.421-0.863,1.463-1.221,2.324-0.801C25.798,20.591,26.156,21.63,25.732,22.493z"/>
+
+				<path fill="#00A5AF" d="M22.378,31.958c-6.308,0-12.134-3.179-15.584-8.503c-0.322-0.496-0.321-1.136,0-1.632
+					c3.452-5.32,9.278-8.496,15.584-8.496c6.527,0,12.396,3.12,15.7,8.347c0.31,0.49,0.31,1.114,0,1.604
+					C34.642,28.713,28.771,31.958,22.378,31.958z M9.877,22.641c2.941,3.974,7.545,6.317,12.501,6.317
+					c5.036,0,9.686-2.405,12.621-6.479c-2.827-3.869-7.473-6.151-12.621-6.151C17.423,16.327,12.82,18.669,9.877,22.641z"/>
+			</svg>
+			
+			<svg width="45px" height="45px" class="interactiveReset" viewbox="0 0 45 45">
+				<path fill="#FFFFFF" d="M44.863,22.439c0,12.383-10.04,22.426-22.44,22.426C10.04,44.865,0,34.822,0,22.439
+				C0,10.041,10.04,0,22.423,0C34.823,0,44.863,10.041,44.863,22.439z"/>
+				<path fill="#FF007D" d="M8.719,17.438c0.743-0.564,1.801-0.406,2.347,0.338l1.004,1.322c0.959-3.076,3.119-5.713,6.081-7.207
+				c5.931-2.986,13.166-0.578,16.151,5.355c2.984,5.914,0.576,13.166-5.34,16.135c-4.429,2.229-9.672,1.539-13.373-1.727
+				c-0.699-0.617-0.756-1.678-0.141-2.379c0.615-0.697,1.677-0.756,2.375-0.141c2.658,2.35,6.439,2.836,9.616,1.244
+				c4.269-2.15,6.009-7.359,3.861-11.627c-1.047-2.07-2.821-3.609-5.021-4.33c-2.197-0.734-4.539-0.559-6.607,0.469
+				c-2.023,1.033-3.515,2.789-4.258,4.838l1.508-1.143c0.742-0.547,1.801-0.404,2.364,0.338c0.564,0.744,0.406,1.801-0.322,2.348
+				l-4.692,3.545c-0.744,0.547-1.801,0.406-2.347-0.34L8.38,19.801C7.832,19.059,7.975,18.002,8.719,17.438z"/>
+			</svg>
+			<span class="interactiveCorrect">
+				<span>5</span>
+				<svg width="49.1px" height="42.1px" viewBox="0 0 49.1 42.1">
+					<path style="fill:#64E164;" d="M5.8,8.8c-4.9,1.8-6,2.8-5.7,6.1c0.5,3.1,10.5,19,16,23.7c5.5,4.6,6.5,5.1,12.5-0.9C33.7,32,48.4,11.3,49.1,7
+						c0.3-4.7-9.5-6.7-12.2-7c-2.8-0.3-5.3,4.7-6.5,8c-1.2,3.2-7.8,16.1-8.1,16.9c-0.3,0.8-5.7-8.3-7.3-11.3C11.4,6.6,10.6,7.1,5.8,8.8z
+						"/>
+					<path style="opacity:0.23;fill:#040328;" d="M0.4,16.2c0.7-1.3,2.3-2.1,5.3-3.2c4.9-1.8,5.6-2.3,9.2,4.7c1.6,3,7,12.1,7.3,11.3c0.3-0.8,6.9-13.7,8.1-16.9
+						c1.1-3.3,3.7-8.3,6.5-8c2.3,0.2,9.3,1.7,11.5,4.8C48.7,8.1,49,7.5,49.1,7c0.3-4.7-9.5-6.7-12.2-7c-2.8-0.3-5.3,4.7-6.5,8
+						c-1.2,3.2-7.8,16.1-8.1,16.9c-0.3,0.8-5.7-8.3-7.3-11.3c-3.5-7-4.3-6.5-9.2-4.7c-4.9,1.8-6,2.8-5.7,6.1C0.1,15.2,0.2,15.6,0.4,16.2
+						z"/>
+				</svg>
+			</span>
+			<span class="interactiveWrong">
+				<span>6</span>
+				<svg width="42.1px" height="41.8px" viewBox="0 0 42.1 41.8">
+					<path style="fill:#FF0000;" d="M41.3,29.9c-1.6-1.9-5.7-5.2-10.1-8.9c4.1-3.5,8.3-7.1,10.2-9.4C45.2,7.1,32.8,0,32.8,0
+						c-3.4-0.2-5.9,3.6-10.7,10.1c-0.3,0.4-0.7,0.9-1.1,1.4c-0.4-0.5-0.8-0.9-1.1-1.4C15.2,3.6,12.7-0.2,9.3,0C9.3,0-3,7.1,0.7,11.7
+						c1.9,2.3,6.1,5.9,10.2,9.4C6.6,24.7,2.4,28,0.8,29.9c-3.2,3.9,3.6,10.3,7.1,11.7c3.5,1.3,9.4-6.7,13.1-11.2
+						c3.7,4.5,9.6,12.5,13.1,11.2C37.7,40.3,44.5,33.8,41.3,29.9z"/>
+					<path style="fill:#151607;opacity:0.23;" d="M9.3,4.1C12.7,4,15.2,7.7,20,14.3c0.3,0.5,0.7,0.9,1.1,1.4c0.4-0.5,0.8-0.9,1.1-1.4C26.9,7.7,29.4,4,32.8,4.1
+						c0,0,6.5,3.7,8.6,7.5C45.1,7.1,32.8,0,32.8,0c-3.4-0.2-5.9,3.6-10.7,10.1c-0.3,0.4-0.7,0.9-1.1,1.4c-0.4-0.5-0.8-0.9-1.1-1.4
+						C15.2,3.6,12.7-0.2,9.3,0C9.3,0-3,7.1,0.7,11.7C2.8,7.9,9.3,4.1,9.3,4.1z"/>
+					<path style="fill:#151607;opacity:0.23;" d="M42.1,31.6c0-0.1,0-0.1-0.1-0.2c0-0.2-0.1-0.4-0.2-0.5c0-0.1-0.1-0.1-0.1-0.2c-0.1-0.2-0.3-0.5-0.4-0.7
+						c-1.6-1.9-5.7-5.2-10-8.8c-0.4,0.5-0.5,1.7-0.1,4.1c4.3,3.6,8.5,6.9,10.1,8.9c0.1,0.2,0.2,0.3,0.3,0.5l0,0
+						c0.2-0.6,0.4-1.1,0.5-1.6c0-0.1,0-0.2,0-0.3c0-0.1,0-0.3,0-0.4C42.1,32,42.1,31.8,42.1,31.6z"/>
+					<path style="fill:#151607;opacity:0.23;" d="M10.9,21.1c-0.8,0.7-1.6,1.4-2.4,2l0,0c-0.4,0.3-0.8,0.6-1.1,0.9c-0.1,0-0.1,0.1-0.2,0.1
+							c-0.4,0.3-0.7,0.6-1.1,0.9c-0.1,0-0.1,0.1-0.2,0.1C5.6,25.5,5.3,25.8,5,26c0,0-0.1,0.1-0.1,0.1c-0.3,0.3-0.6,0.5-0.9,0.8
+							C3.9,27,3.9,27,3.8,27.1c-0.3,0.3-0.6,0.5-0.8,0.7c0,0-0.1,0.1-0.1,0.1c-0.2,0.2-0.5,0.4-0.7,0.6c0,0-0.1,0.1-0.1,0.1
+							c-0.2,0.2-0.4,0.4-0.6,0.6c0,0-0.1,0.1-0.1,0.1c-0.2,0.2-0.4,0.4-0.5,0.6c-0.2,0.2-0.3,0.4-0.4,0.7c0,0.1-0.1,0.1-0.1,0.2
+							c-0.1,0.2-0.1,0.4-0.2,0.5c0,0.1,0,0.1-0.1,0.2C0,31.8,0,32,0,32.2c0,0.1,0,0.3,0,0.4c0,0.1,0,0.2,0,0.3c0.1,0.5,0.2,1.1,0.5,1.6
+							l0,0c0.1-0.2,0.2-0.3,0.3-0.5c1.6-1.9,5.7-5.2,10.1-8.9C10.9,24.8,12.1,21,10.9,21.1z"/>
+				</svg>
+			</span>
+		
+		
+		</div>
+
+
+<div class="extraInfo">
+			<div class="extraInfoCenter">
+				<div class="playBtnWrapper audioBtn">
+					<svg width="70px" height="70px" viewBox="0 0 70 70">
+						<defs>
+							<linearGradient id="playCircle" gradientUnits="userSpaceOnUse" x1="54.1074" y1="64.5625" x2="16.1447" y2="5.8279">
+								<stop  offset="0" style="stop-color:#D9E0E0"/>
+								<stop  offset="0.3053" style="stop-color:#CFD2D1"/>
+								<stop  offset="0.8864" style="stop-color:#B6AEAB"/>
+								<stop  offset="1" style="stop-color:#B1A6A3"/>
+							</linearGradient>
+							<linearGradient id="playStroke" gradientUnits="userSpaceOnUse" x1="20.6182" y1="18.5337" x2="57.5609" y2="60.8305">
+								<stop  offset="0" style="stop-color:#D9E0E0"/>
+								<stop  offset="0.3053" style="stop-color:#CFD2D1"/>
+								<stop  offset="0.8864" style="stop-color:#B6AEAB"/>
+								<stop  offset="1" style="stop-color:#B1A6A3"/>
+							</linearGradient>
+							<linearGradient id="playCircleP" gradientUnits="userSpaceOnUse" x1="54.1074" y1="64.5625" x2="16.1447" y2="5.8279">
+								<stop  offset="0" style="stop-color:#D9E0E0"/>
+								<stop  offset="0.1162" style="stop-color:#CADDE2"/>
+								<stop  offset="0.3385" style="stop-color:#A4D5E7"/>
+								<stop  offset="0.6439" style="stop-color:#66C8F0"/>
+								<stop  offset="1" style="stop-color:#15B7FB"/>
+							</linearGradient>
+							<linearGradient id="playStrokeP" gradientUnits="userSpaceOnUse" x1="20.6182" y1="18.5337" x2="57.5609" y2="60.8305">
+								<stop  offset="0" style="stop-color:#D9E0E0"/>
+								<stop  offset="0.1162" style="stop-color:#CADDE2"/>
+								<stop  offset="0.3385" style="stop-color:#A4D5E7"/>
+								<stop  offset="0.6439" style="stop-color:#66C8F0"/>
+								<stop  offset="1" style="stop-color:#15B7FB"/>
+							</linearGradient>
+						</defs>
+						<g class="gPlayCircle">
+							<path d="M68.7,35c0,18.6-15.1,33.7-33.7,33.7C16.4,68.7,1.3,53.6,1.3,35C1.3,16.4,16.4,1.3,35,1.3
+							C53.6,1.3,68.7,16.4,68.7,35z"/>
+							<path d="M35,70C15.7,70,0,54.3,0,35C0,15.7,15.7,0,35,0c19.3,0,35,15.7,35,35C70,54.3,54.3,70,35,70z M35,2.7
+							C17.2,2.7,2.7,17.2,2.7,35c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3C67.3,17.2,52.8,2.7,35,2.7z"/>
+						</g>
+						<g class="gPlay">			
+						
+							<path fill="" 	d="M22,19.3c0-1.9,1.3-2.6,2.9-1.5L50.8,33c1.6,1.1,1.6,2.9,0,3.9L24.9,52.2c-1.6,1.1-2.9,0.4-2.9-1.5L22,19.3z"/>
+						</g>
+						<g class="gPause">
+							<path d="M46.9,24.7c0,0,0.4-3.4-2-3.3c-2.4,0.1-6.8-1.1-6.9,1.9c-0.1,3,0,19.3-0.1,21.6c-0.1,2.3,0.1,3.9,3,3.6
+								c3-0.4,6.4,2.5,6-4.7C46.7,37.6,46.9,24.7,46.9,24.7z"/>
+							<path d="M33,24.7c0,0,0.4-3.4-2-3.3c-2.4,0.1-6.8-1.1-6.9,1.9c-0.1,3,0,19.3-0.1,21.6c-0.1,2.3,0.1,3.9,3,3.6c3-0.4,6.4,2.5,6-4.7
+								C32.8,37.6,33,24.7,33,24.7z"/>
+						</g>
+					</svg>
+				</div>
+				
+				<div class="playBtnWrapper stopBtn">
+					<svg width="60px" height="60px" viewBox="0 0 60 60" >
+						<defs>
+								<linearGradient id="playCircle" gradientUnits="userSpaceOnUse" x1="54.1074" y1="64.5625" x2="16.1447" y2="5.8279">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.3053" style="stop-color:#CFD2D1"/>
+									<stop  offset="0.8864" style="stop-color:#B6AEAB"/>
+									<stop  offset="1" style="stop-color:#B1A6A3"/>
+								</linearGradient>
+								<linearGradient id="playStroke" gradientUnits="userSpaceOnUse" x1="20.6182" y1="18.5337" x2="57.5609" y2="60.8305">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.3053" style="stop-color:#CFD2D1"/>
+									<stop  offset="0.8864" style="stop-color:#B6AEAB"/>
+									<stop  offset="1" style="stop-color:#B1A6A3"/>
+								</linearGradient>
+								<linearGradient id="playCircleP" gradientUnits="userSpaceOnUse" x1="54.1074" y1="64.5625" x2="16.1447" y2="5.8279">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.1162" style="stop-color:#CADDE2"/>
+									<stop  offset="0.3385" style="stop-color:#A4D5E7"/>
+									<stop  offset="0.6439" style="stop-color:#66C8F0"/>
+									<stop  offset="1" style="stop-color:#15B7FB"/>
+								</linearGradient>
+								<linearGradient id="playStrokeP" gradientUnits="userSpaceOnUse" x1="20.6182" y1="18.5337" x2="57.5609" y2="60.8305">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.1162" style="stop-color:#CADDE2"/>
+									<stop  offset="0.3385" style="stop-color:#A4D5E7"/>
+									<stop  offset="0.6439" style="stop-color:#66C8F0"/>
+									<stop  offset="1" style="stop-color:#15B7FB"/>
+								</linearGradient>
+							</defs>
+						<g class="gStopCircle">
+							<path d="M58.9,30c0,15.9-12.9,28.9-28.9,28.9C14.1,58.9,1.1,45.9,1.1,30C1.1,14.1,14.1,1.1,30,1.1
+								C45.9,1.1,58.9,14.1,58.9,30z"/>
+							<path d="M30,60C13.5,60,0,46.5,0,30C0,13.5,13.5,0,30,0c16.5,0,30,13.5,30,30C60,46.5,46.5,60,30,60z M30,2.3
+								C14.7,2.3,2.3,14.7,2.3,30c0,15.3,12.4,27.7,27.7,27.7c15.3,0,27.7-12.4,27.7-27.7C57.7,14.7,45.3,2.3,30,2.3z"/>
+						</g>
+						
+						<path d="M41.3,39.7c0,0.7-0.6,1.3-1.3,1.3H20.6c-0.7,0-1.3-0.6-1.3-1.3V20.3c0-0.7,0.6-1.3,1.3-1.3H40
+							c0.7,0,1.3,0.6,1.3,1.3V39.7z"/>
+					</svg>
+				</div>
+				
+				<div class="soundBarWrapper">
+					<div class="soundTimer">00:00</div>
+					<div class="soundBar">
+						<div class="barRed"></div>
+						<div class="barRedW"></div>
+						<audio><source src="" type="audio/mpeg"></audio>					
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+<div class="videoWrapper">
+		<div class="videoContainer">
+			<video>
+			  <source type="video/mp4">		  
+			</video>
+			
+			
+		</div>
+		<div class="subs"><div class="subsSpan"></div></div>
+		<div class="extraInfoVideo">
+			<div class="extraInfoCenterVideo">
+				<div class="playBtnWrapper videoPlayBtn videoPause">
+						<svg width="70px" height="70px" viewBox="0 0 70 70">
+							<defs>
+								<linearGradient id="playCircleV" gradientUnits="userSpaceOnUse" x1="54.1074" y1="64.5625" x2="16.1447" y2="5.8279">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.3053" style="stop-color:#CFD2D1"/>
+									<stop  offset="0.8864" style="stop-color:#B6AEAB"/>
+									<stop  offset="1" style="stop-color:#B1A6A3"/>
+								</linearGradient>
+								<linearGradient id="playStrokeV" gradientUnits="userSpaceOnUse" x1="20.6182" y1="18.5337" x2="57.5609" y2="60.8305">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.3053" style="stop-color:#CFD2D1"/>
+									<stop  offset="0.8864" style="stop-color:#B6AEAB"/>
+									<stop  offset="1" style="stop-color:#B1A6A3"/>
+								</linearGradient>
+								<linearGradient id="playCircleVP" gradientUnits="userSpaceOnUse" x1="54.1074" y1="64.5625" x2="16.1447" y2="5.8279">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.1162" style="stop-color:#CADDE2"/>
+									<stop  offset="0.3385" style="stop-color:#A4D5E7"/>
+									<stop  offset="0.6439" style="stop-color:#66C8F0"/>
+									<stop  offset="1" style="stop-color:#15B7FB"/>
+								</linearGradient>
+								<linearGradient id="playStrokeVP" gradientUnits="userSpaceOnUse" x1="20.6182" y1="18.5337" x2="57.5609" y2="60.8305">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.1162" style="stop-color:#CADDE2"/>
+									<stop  offset="0.3385" style="stop-color:#A4D5E7"/>
+									<stop  offset="0.6439" style="stop-color:#66C8F0"/>
+									<stop  offset="1" style="stop-color:#15B7FB"/>
+								</linearGradient>
+							</defs>
+							<g class="gPlayCircle">
+							<path d="M68.7,35c0,18.6-15.1,33.7-33.7,33.7C16.4,68.7,1.3,53.6,1.3,35C1.3,16.4,16.4,1.3,35,1.3
+							C53.6,1.3,68.7,16.4,68.7,35z"/>
+							<path d="M35,70C15.7,70,0,54.3,0,35C0,15.7,15.7,0,35,0c19.3,0,35,15.7,35,35C70,54.3,54.3,70,35,70z M35,2.7
+							C17.2,2.7,2.7,17.2,2.7,35c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3C67.3,17.2,52.8,2.7,35,2.7z"/>
+						</g>
+						<g class="gPlay">			
+						
+							<path fill="" 	d="M22,19.3c0-1.9,1.3-2.6,2.9-1.5L50.8,33c1.6,1.1,1.6,2.9,0,3.9L24.9,52.2c-1.6,1.1-2.9,0.4-2.9-1.5L22,19.3z"/>
+						</g>
+						<g class="gPause">
+							<path d="M46.9,24.7c0,0,0.4-3.4-2-3.3c-2.4,0.1-6.8-1.1-6.9,1.9c-0.1,3,0,19.3-0.1,21.6c-0.1,2.3,0.1,3.9,3,3.6
+								c3-0.4,6.4,2.5,6-4.7C46.7,37.6,46.9,24.7,46.9,24.7z"/>
+							<path d="M33,24.7c0,0,0.4-3.4-2-3.3c-2.4,0.1-6.8-1.1-6.9,1.9c-0.1,3,0,19.3-0.1,21.6c-0.1,2.3,0.1,3.9,3,3.6c3-0.4,6.4,2.5,6-4.7
+								C32.8,37.6,33,24.7,33,24.7z"/>
+						</g>
+						</svg>
+					</div>
+					<div class="playBtnWrapper videostopBtn">
+						<svg width="60px" height="60px" viewBox="0 0 60 60" >
+							<defs>
+								<linearGradient id="playCircle" gradientUnits="userSpaceOnUse" x1="54.1074" y1="64.5625" x2="16.1447" y2="5.8279">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.3053" style="stop-color:#CFD2D1"/>
+									<stop  offset="0.8864" style="stop-color:#B6AEAB"/>
+									<stop  offset="1" style="stop-color:#B1A6A3"/>
+								</linearGradient>
+								<linearGradient id="playStroke" gradientUnits="userSpaceOnUse" x1="20.6182" y1="18.5337" x2="57.5609" y2="60.8305">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.3053" style="stop-color:#CFD2D1"/>
+									<stop  offset="0.8864" style="stop-color:#B6AEAB"/>
+									<stop  offset="1" style="stop-color:#B1A6A3"/>
+								</linearGradient>
+								<linearGradient id="playCircleP" gradientUnits="userSpaceOnUse" x1="54.1074" y1="64.5625" x2="16.1447" y2="5.8279">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.1162" style="stop-color:#CADDE2"/>
+									<stop  offset="0.3385" style="stop-color:#A4D5E7"/>
+									<stop  offset="0.6439" style="stop-color:#66C8F0"/>
+									<stop  offset="1" style="stop-color:#15B7FB"/>
+								</linearGradient>
+								<linearGradient id="playStrokeP" gradientUnits="userSpaceOnUse" x1="20.6182" y1="18.5337" x2="57.5609" y2="60.8305">
+									<stop  offset="0" style="stop-color:#D9E0E0"/>
+									<stop  offset="0.1162" style="stop-color:#CADDE2"/>
+									<stop  offset="0.3385" style="stop-color:#A4D5E7"/>
+									<stop  offset="0.6439" style="stop-color:#66C8F0"/>
+									<stop  offset="1" style="stop-color:#15B7FB"/>
+								</linearGradient>
+							</defs>
+							<g class="gStopCircle">
+								<path d="M58.9,30c0,15.9-12.9,28.9-28.9,28.9C14.1,58.9,1.1,45.9,1.1,30C1.1,14.1,14.1,1.1,30,1.1
+									C45.9,1.1,58.9,14.1,58.9,30z"/>
+								<path d="M30,60C13.5,60,0,46.5,0,30C0,13.5,13.5,0,30,0c16.5,0,30,13.5,30,30C60,46.5,46.5,60,30,60z M30,2.3
+									C14.7,2.3,2.3,14.7,2.3,30c0,15.3,12.4,27.7,27.7,27.7c15.3,0,27.7-12.4,27.7-27.7C57.7,14.7,45.3,2.3,30,2.3z"/>
+							</g>
+							
+							<path d="M41.3,39.7c0,0.7-0.6,1.3-1.3,1.3H20.6c-0.7,0-1.3-0.6-1.3-1.3V20.3c0-0.7,0.6-1.3,1.3-1.3H40
+								c0.7,0,1.3,0.6,1.3,1.3V39.7z"/>
+						</svg>
+					</div>
+					<div class="videoBarWrapper">
+						<div class="videoTimer">00:00</div>
+						<div class="videoBar">				
+							<div class="videobarRed"></div>
+							<div class="videobarRedW"></div>
+						</div>
+					</div>
+					
+					<div class="subsOn">
+						<svg width="70px" height="70px" viewBox="0 0 70 70">
+							<g class="gSubCircle">
+								<path d="M68.7,35c0,18.6-15.1,33.7-33.7,33.7C16.4,68.7,1.3,53.6,1.3,35C1.3,16.4,16.4,1.3,35,1.3
+											C53.6,1.3,68.7,16.4,68.7,35z"/>
+
+								<path d="M35,70C15.7,70,0,54.3,0,35C0,15.7,15.7,0,35,0c19.3,0,35,15.7,35,35C70,54.3,54.3,70,35,70z M35,2.7
+											C17.2,2.7,2.7,17.2,2.7,35c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3C67.3,17.2,52.8,2.7,35,2.7z"/>
+							</g>
+							<path fill="stroke:#000000;stroke-miterlimit:10;" d="M25.5,48.7c-0.3,0.9-0.9,1.5-1.9,1.5c-1,0-1.9-0.6-1.9-1.7c0-0.5,0.4-1.6,0.5-2l9.9-26.5
+										c0.5-1.4,1.3-2.4,2.8-2.4s2.3,1,2.8,2.4l9.9,26.5c0.1,0.4,0.5,1.4,0.5,2c0,1-0.9,1.7-1.9,1.7c-1.1,0-1.6-0.6-1.9-1.5L42.4,43
+										H27.6L25.5,48.7z M35,22.2L35,22.2l-6.3,17.3h12.4L35,22.2z"/>
+										
+							<path class="subsX" fill="#FF0000" d="M0,35c0,8.3,2.9,15.9,7.8,21.9c1.6,2,3.4,3.7,5.3,5.3l0,0c6,4.8,13.6,7.8,21.9,7.8c19.3,0,35-15.7,35-35
+								c0-8.3-2.9-15.9-7.8-21.9c-1.6-1.9-3.4-3.7-5.3-5.3C50.9,2.9,43.3,0,35,0C15.7,0,0,15.7,0,35z M18.4,56.9l38.5-38.5
+								c3.5,4.6,5.6,10.4,5.6,16.6c0,15.2-12.3,27.5-27.5,27.5C28.8,62.5,23,60.4,18.4,56.9z M7.5,35C7.5,19.8,19.8,7.5,35,7.5
+								c6.2,0,12,2.1,16.6,5.6L13.1,51.6C9.6,47,7.5,41.2,7.5,35z"/>
+						</svg>
+					</div>
+					
+					<div class="clVideo">
+						<svg width="70px" height="70px" viewBox="0 0 70 70" class="closeVideo">
+							<g class="gCloseCircle">
+								<path class="st0" d="M68.7,35c0,18.6-15.1,33.7-33.7,33.7C16.4,68.7,1.3,53.6,1.3,35C1.3,16.4,16.4,1.3,35,1.3
+										C53.6,1.3,68.7,16.4,68.7,35z"/>
+								<path class="st1" d="M35,70C15.7,70,0,54.3,0,35C0,15.7,15.7,0,35,0c19.3,0,35,15.7,35,35C70,54.3,54.3,70,35,70z M35,2.7
+										C17.2,2.7,2.7,17.2,2.7,35c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3C67.3,17.2,52.8,2.7,35,2.7z"/>
+							</g>
+								<path d="M38.9,35l10.9-10.9c1-1,1-2.6,0-3.5c-0.5-0.5-1.1-0.7-1.8-0.7c-0.6,0-1.3,0.2-1.8,0.7L35,31.9L23.6,20.5c-1-1-2.6-1-3.5,0
+								c-1,1-1,2.6,0,3.5L31.1,35L20.1,45.9c-1,1-1,2.6,0,3.5c0.5,0.5,1.1,0.7,1.8,0.7c0.6,0,1.3-0.2,1.8-0.7L35,38.1l11.4,11.4
+								c1,1,2.6,1,3.5,0c1-1,1-2.6,0-3.5L38.9,35z"/>
+						</svg>
+					
+					</div>
+				</div>
+			</div>
+			
+	</div>
+	
+	
+
+	<div class="mainOptions">
+	
+			
+				
+				
+			
+			
+			
+			
+			<div class="mainGroupLeft">
+			
+			<div class="homeBtn">
+				<svg width="65px" height="65px" viewBox="0 0 65 65" class="spreadHomeBtn">
+					<path  d="M47.4,28.4L34,16.3c-0.9-0.8-2.3-0.8-3.2,0L17.4,28.5c-0.4,0.4-0.6,0.9-0.6,1.5c0,0.6,0.2,1.1,0.6,1.5c0.4,0.4,1,0.6,1.6,0.6c0.4,0,0.8-0.1,1.1-0.2v12.8c0,1.2,1,2.2,2.1,2.2h6v-9.2h8.3v9.2h6c1.2,0,2.2-1,2.2-2.2V31.9c0.3,0.1,0.7,0.2,1.1,0.2c0.6,0,1.3-0.2,1.7-0.6C48.2,30.6,48.2,29.2,47.4,28.4z"/>
+				</svg>
+			</div>
+			
+			
+			<div class="videoBtn" data-disabled="true">
+				<svg width="65px" height="65px" viewBox="0 0 65 65">
+					<path fill="#ffffff" d="M47.5,27.9l-6,4.7v-2.8c0-1.9-1.5-3.4-3.4-3.4H21.9c-1.9,0-3.4,1.5-3.4,3.4V41c0,1.9,1.5,3.4,3.4,3.4H38     c1.9,0,3.4-1.5,3.4-3.4v-2.8l6,4.7c0.9,0.7,2.1-0.2,2.1-1.7V29.5C49.6,28.1,48.4,27.1,47.5,27.9z"/>
+					<path fill="#ffffff" d="M24.2,24.8c2.7,0,4.9-2.2,4.9-4.9c0-2.7-2.2-4.9-4.9-4.9c-2.7,0-4.9,2.2-4.9,4.9     C19.3,22.6,21.5,24.8,24.2,24.8z"/>
+					<path fill="#ffffff" d="M35.1,24.8c2.7,0,4.9-2.2,4.9-4.9c0-2.7-2.2-4.9-4.9-4.9c-2.7,0-4.9,2.2-4.9,4.9     C30.2,22.6,32.4,24.8,35.1,24.8z"/>
+				</svg>
+			</div>
+				<!-- <svg width="50px" height="50px" viewBox="0 0 50 50" class="returnSallon" data-disabled="true">
+					<path class="svgCircle" fill="#FFFFFF" d="
+						M24.989,50C13.9,49.998,4.025,42.545,0.969,31.876c-3.79-13.244,3.9-27.106,17.147-30.903C20.368,0.328,22.685,0,25.007,0
+						c11.084,0,20.961,7.451,24.014,18.111c1.838,6.424,1.069,13.173-2.168,19.016c-3.235,5.834-8.555,10.063-14.969,11.9
+						C29.628,49.672,27.311,50,24.991,50H24.989z"/>
+					<path class="svgInvert" fill="#737373" d="M40.366,13.117H11.061c-0.537,0-0.972,0.435-0.972,0.972v22.184c0,0.537,0.435,0.972,0.972,0.972h22.808
+						c0.286,0,0.558-0.126,0.743-0.346l6.498-7.706c0.147-0.175,0.229-0.396,0.229-0.626V14.089
+						C41.338,13.552,40.903,13.117,40.366,13.117z M39.394,27.734h-6.401v7.566h-7.722v-20.24h14.123V27.734z"/>
+										
+				</svg>
+				
+				
+				<svg width="50px" height="50px" viewBox="0 0 50 50" class="showAnswers" data-disabled="true">
+					<g>
+						<path class="svgCircle" fill="#FFFFFF" d="
+							M24.988,50C13.899,49.998,4.024,42.545,0.968,31.876c-3.79-13.244,3.9-27.106,17.147-30.903C20.367,0.328,22.684,0,25.006,0
+							C36.09,0,45.967,7.451,49.02,18.111c1.838,6.424,1.069,13.173-2.168,19.016c-3.235,5.834-8.555,10.063-14.969,11.9
+							C29.627,49.672,27.31,50,24.99,50H24.988z"/>
+						<path class="svgInvert" fill="#737373" d="M27.568,19.735c-2.906-1.419-6.414-0.214-7.834,2.693c-1.421,2.907-0.215,6.415,2.691,7.834
+							c2.906,1.421,6.418,0.218,7.838-2.689C31.685,24.666,30.478,21.156,27.568,19.735z"/>
+						<path class="svgInvert" fill="#737373" d="M24.942,34.905c-6.708,0-12.904-3.38-16.571-9.042c-0.343-0.527-0.342-1.207,0-1.734
+							c3.67-5.657,9.865-9.034,16.571-9.034c6.94,0,13.182,3.317,16.694,8.875c0.329,0.521,0.329,1.185,0,1.705
+							C37.982,31.455,31.74,34.905,24.942,34.905z M11.648,24.998c3.129,4.225,8.023,6.717,13.294,6.717c5.354,0,10.299-2.557,13.42-6.89
+							c-3.006-4.114-7.946-6.541-13.42-6.541C19.673,18.284,14.779,20.774,11.648,24.998z"/>
+					</g>
+				</svg>			
+				
+				<svg width="50px" height="50px" viewBox="0 0 50 50" class="videoBtn" data-disabled="true">
+					<g>
+						<path class="svgCircle" fill="#FFFFFF" d="
+						M24.988,50C13.9,49.998,4.023,42.543,0.969,31.877C-2.823,18.632,4.869,4.77,18.115,0.972C20.367,0.329,22.685,0,25.006,0
+						c11.085,0,20.96,7.453,24.014,18.111c1.839,6.423,1.071,13.174-2.167,19.014c-3.237,5.836-8.557,10.063-14.97,11.902
+						C29.627,49.67,27.31,50,24.991,50H24.988z"/>
+						<path class="svgInvert" fill="#737373" d="M36.138,23.493l-4.966,3.898v-2.298c0-1.575-1.28-2.85-2.854-2.85H14.97c-1.576,0-2.852,1.274-2.852,2.85
+							v9.248c0,1.572,1.275,2.854,2.852,2.854h13.349c1.573,0,2.854-1.281,2.854-2.854v-2.301l4.966,3.9
+							c0.772,0.607,1.744-0.154,1.744-1.369v-9.708C37.882,23.647,36.91,22.885,36.138,23.493z"/>
+						<circle class="svgInvert" fill="#737373" cx="16.85" cy="16.861" r="4.054"/>
+						<path class="svgInvert" fill="#737373" d="M25.896,20.916c2.236,0,4.051-1.815,4.051-4.056c0-2.241-1.814-4.053-4.051-4.053
+							c-2.241,0-4.054,1.812-4.054,4.053C21.843,19.1,23.655,20.916,25.896,20.916z"/>
+					</g>
+				</svg> -->
+				
+				
+				
+				
+			
+			
+			
+			
+			</div>
+			
+			<div class="mainGroupRight">
+				
+				
+				
+				
+				
+				
+				<!-- <svg width="50px" height="50px" viewBox="0 0 50 50" class="vocabularyBtn" data-type="VC" data-disabled="true">
+					<g>
+						<path class="svgCircle" fill="white" d="
+						M24.988,50C13.9,49.998,4.023,42.544,0.969,31.877c-3.792-13.244,3.9-27.106,17.146-30.904C20.367,0.329,22.685,0,25.006,0
+						c11.085,0,20.96,7.453,24.014,18.111c1.839,6.423,1.071,13.174-2.167,19.014c-3.237,5.837-8.557,10.063-14.97,11.902
+						C29.627,49.671,27.31,50,24.991,50H24.988z"/>
+
+						<polygon class="svgInvert" fill="#737373" points="31.655,39.045 34.971,40.945 34.971,29.491 28.42,29.491 28.42,40.945 	"/>
+						<path class="svgInvert" fill="#737373" d="M22.268,16.391h-0.054c0,0-0.195,0.521-0.305,0.775l-1.146,2.497h2.195l-0.578-2.497
+							C22.343,16.971,22.268,16.391,22.268,16.391z"/>
+						<path class="svgInvert" fill="#737373" d="M30.364,17.505c-0.869,0-1.253,0.742-1.182,2.254c0.068,1.464,0.509,2.25,1.348,2.25
+							c0.588,0,0.977-0.424,1.209-0.89l-0.262-2.69C31.258,17.915,30.8,17.505,30.364,17.505z"/>
+						<path class="svgInvert" fill="#737373" d="M39.735,27.489c0.254-0.332,0.335-0.68,0.223-1.083l-3.712-14.625c-0.36-1.282-1.532-1.941-2.865-1.941
+							H17.995c-1.315,0-2.458,0.68-2.848,1.973c-0.259,0.849-4.599,17.015-4.824,17.802c-0.195,0.672-0.33,1.557-0.33,2.422
+							c0,2.922,1.858,5.642,4.145,5.642h23.675c1.038,0,1.882-1.638,1.882-3.275H14.138c-1.227,0-2.262-1.427-2.262-3.272
+							c0-1.853,1.035-3.275,2.262-3.275h24.537C39.091,27.854,39.483,27.825,39.735,27.489z M25.533,22.939h-0.697
+							c-0.46,0-0.804,0.185-0.871-0.055l-0.511-1.583h-3.592l-0.879,1.583c-0.114,0.226-0.398,0.055-0.779,0.055h-0.635
+							c-0.664,0-0.944,0.284-0.903,0.067c0.014-0.073,0.064,0.039,0.117-0.069l4.659-9.609c0.105-0.239,0.396-0.213,0.764-0.213h0.66
+							c0.371,0,0.644,0.073,0.703,0.317l2.721,9.708c0.027,0.106,0.044-0.207,0.044-0.134C26.329,23.224,26.09,22.939,25.533,22.939z
+							 M32.72,23.729c-0.509,0-0.604-0.635-0.736-1.028c-0.296,0.649-1.034,1.136-2.02,1.136c-1.715,0-2.974-1.451-2.982-4.078
+							c-0.011-2.463,0.932-4.063,2.658-4.063c0.817,0,1.536,0.62,1.826,1.042l0.008-0.029c0.007-0.317-0.034-0.317,0.531-0.317h0.378
+							c0.569,0,0.835-0.136,0.88,0.181l0.67,4.638c0.217,1.554,0.446,1.796,0.494,2.115C34.476,23.685,33.114,23.729,32.72,23.729z"/>
+					</g>
+				</svg> 
+
+				<svg width="50px" height="50px" viewBox="0 0 50 50" class="txtmcBtn" data-disabled="true" >
+					<g>
+						 <path class="svgCircle" fill="white" d="
+						M24.988,50C13.9,49.998,4.023,42.544,0.969,31.877c-3.792-13.244,3.9-27.106,17.146-30.904C20.367,0.329,22.685,0,25.006,0
+						c11.085,0,20.96,7.453,24.014,18.111c1.839,6.423,1.071,13.174-2.167,19.014c-3.237,5.837-8.557,10.063-14.97,11.902
+						C29.627,49.671,27.31,50,24.991,50H24.988z"/>
+
+						<path class="svgInvert" fill="#737373" d="M36.56,34.873c-0.405-0.525-0.379-1.368,0.061-1.867c0,0,4.739-5.424,4.739-9.622
+							c0-7.754-7.325-14.039-16.36-14.039c-9.033,0-16.359,6.285-16.359,14.039c0,7.76,7.326,14.049,16.359,14.049
+							c1.965,0,4.404-0.568,4.404-0.568c0.651-0.151,1.68-0.064,2.297,0.191l7.982,3.319c0.611,0.256,1.113,0.354,1.113,0.224
+							c0-0.127-0.338-0.667-0.742-1.192L36.56,34.873z M18.37,18.064h13.014c0.463,0,0.834,0.376,0.834,0.836
+							c0,0.462-0.371,0.836-0.834,0.836H18.37c-0.458,0-0.834-0.374-0.834-0.836C17.536,18.44,17.912,18.064,18.37,18.064z M18.37,26.944
+							h13.014c0.463,0,0.834,0.376,0.834,0.835c0,0.464-0.371,0.837-0.834,0.837H18.37c-0.458,0-0.834-0.373-0.834-0.837
+							C17.536,27.32,17.912,26.944,18.37,26.944z M15.244,22.592h19.56c0.462,0,0.836,0.376,0.836,0.837c0,0.462-0.374,0.835-0.836,0.835
+							h-19.56c-0.464,0-0.837-0.373-0.837-0.835C14.407,22.968,14.78,22.592,15.244,22.592z"/>
+					</g>
+				</svg>				
+
+				<svg width="50px" height="50px" viewBox="0 0 50 50" class="referenceBtn" data-disabled="true">
+					<g>
+						<path class="svgCircle" fill="white" d="
+							M24.988,50C13.9,49.998,4.023,42.545,0.968,31.877c-3.792-13.244,3.9-27.106,17.146-30.904C20.367,0.33,22.684,0,25.005,0
+							C36.092,0,45.967,7.454,49.02,18.112c1.84,6.423,1.072,13.173-2.166,19.013c-3.238,5.838-8.557,10.064-14.971,11.902
+							C29.627,49.672,27.311,50,24.991,50H24.988z"/>
+
+						<path class="svgInvert" fill="#737373" d="M34.541,8.561c3.119,1.506,4.277,5.113,2.697,8.386l-9.646,20.026c-2.139,4.441-6.883,6.273-11.045,4.268
+							c-4.145-2.004-5.661-6.865-3.525-11.301l7.92-16.44c0.24-0.501,0.844-0.722,1.346-0.479c0.501,0.243,0.719,0.852,0.474,1.362
+							L14.839,30.82c-1.664,3.449-0.568,7.066,2.588,8.598c3.17,1.521,6.68,0.133,8.348-3.32l9.646-20.028
+							c1.074-2.231,0.326-4.678-1.76-5.677c-2.074-1.001-4.455-0.068-5.529,2.155l-6.397,13.258c-0.511,1.068-0.113,2.277,0.908,2.77
+							c1.02,0.492,2.219,0.057,2.725-0.998l4.676-9.688c0.24-0.502,0.85-0.714,1.352-0.47c0.5,0.243,0.711,0.848,0.473,1.346
+							l-4.672,9.695c-1,2.068-3.393,2.922-5.434,1.945c-2.044-0.986-2.855-3.393-1.85-5.471l6.397-13.266
+							C27.895,8.404,31.432,7.066,34.541,8.561z"/>
+					</g>
+				</svg>-->
+			
+				
+			
+
+			</div>
+			
+			
+			
+		
+			<svg width="55px" height="55px" viewBox="0 0 55 55" data-frame="previous">
+				<path fill="#ffffff" style="transform: translate(-6px, -5px);" d="M26.3,21.2c4.8-3.4,5.3-3.3,7.2-4.1c1.2-0.5,3.1-1.1,3.1,4.6c0,0.6,0,1.3,0,1.9c4.2-0.3,9.5-0.4,11.7,0.2   c3.9,1.1,0.8,5.2,0.7,9.9c-0.1,5.1,3.4,7.7-0.8,8.5c-2.5,0.5-8,0-12.6-0.7c0.3,3.6,0.4,5.4-1.9,5.5c-2.8,0.1-17.8-11.5-18.7-14.7   C14.4,29.8,20.8,25,26.3,21.2z"/>
+			</svg>
+			<svg width="55px" height="55px" viewBox="0 0 55 55" data-frame="next">
+				<path fill="#ffffff" style="transform: translate(-4px, -5px);" d="M39,21.2c-4.8-3.4-5.3-3.3-7.2-4.1c-1.2-0.5-3.1-1.1-3.1,4.6c0,0.6,0,1.3,0,1.9c-4.2-0.3-9.5-0.4-11.7,0.2   c-3.9,1.1-0.8,5.2-0.7,9.9c0.1,5.1-3.4,7.7,0.8,8.5c2.5,0.5,8,0,12.6-0.7c-0.3,3.6-0.4,5.4,1.9,5.5c2.8,0.1,17.8-11.5,18.7-14.7   C51,29.8,44.6,25,39,21.2z"/>
+			</svg>
+			
+			
+			
+			
+					
+				
+				<a href="http://www.mmpublications.com/" target="_blank">
+				<svg width="140px" height="70px" viewBox="0 0 100 50" >
+					<g>
+						<path fill="#FF0000" d="M48.455,18.076c0.014-4.09,3.332-7.435,7.424-7.435c4.104,0,7.43,3.325,7.43,7.427v14.719
+							c-1.814-2.057-4.472-3.357-7.43-3.357c-2.955,0-5.609,1.301-7.424,3.354V18.076z M45.989,18.076v14.708
+							c-1.813-2.053-4.469-3.354-7.426-3.354c-2.958,0-5.612,1.301-7.426,3.357V18.068c0-4.102,3.324-7.427,7.426-7.427
+							C42.656,10.641,45.975,13.986,45.989,18.076 M48.682,37.404c0.818-3.215,3.73-5.592,7.197-5.592c3.47,0,6.378,2.359,7.194,5.572
+							c0.137,0.613,0.669,1.053,1.323,1.053c0.76,0,1.375-0.615,1.375-1.375V18.108c0-5.432-4.437-9.851-9.893-9.851
+							c-3.721,0-6.969,2.06-8.656,5.095c-1.688-3.035-4.937-5.095-8.659-5.095c-5.454,0-9.89,4.419-9.89,9.851v18.955
+							c0,0.76,0.6,1.375,1.359,1.375c0.643,0,1.181-0.439,1.333-1.033c0.817-3.215,3.729-5.592,7.197-5.592s6.382,2.377,7.2,5.592
+							c0.211,0.602,0.774,1.033,1.451,1.033C47.893,38.438,48.466,38.004,48.682,37.404"/>
+					</g>
+					<rect x="-0.135" y="0" fill="none" width="100" height="50"/>
+				</svg>
+			</a>
+				
+				
+				
+				
+				
+			
+		</div>	
+</div>
+
+
+</body>
+</html>
